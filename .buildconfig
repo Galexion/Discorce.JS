@@ -1,0 +1,10 @@
+[default]
+name=Default
+runtime=host
+config-opts=
+run-opts=
+prefix=/home/tailsera/.cache/gnome-builder/install/Discorce.JS/host
+app-id=
+postbuild=
+prebuild=
+default=true
