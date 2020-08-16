@@ -1,0 +1,23 @@
+{
+  "name": "discorce.js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bot.js",
+  "dependencies": {
+    "discord.js": "^12.3.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node bot.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TailsEraYT/Discorce.JS.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TailsEraYT/Discorce.JS/issues"
+  },
+  "homepage": "https://github.com/TailsEraYT/Discorce.JS#readme"
+}
