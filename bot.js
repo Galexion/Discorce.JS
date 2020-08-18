@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const dotenv = require('dotenv');
+const { token } = require("./config.json");
 const prefix = "DJS!";
 const commands = {
 	//This is all the Rich Embed infomation.
@@ -17,7 +17,7 @@ client.on('ready', () => {
   client.user.setActivity("Currently in Development. || DJS!help");
 });
 
-client.on('message', msg => {
+client.on('message', message => {
 	if (message.author.bot || !message.content.startsWith(prefix)) return;
 
     const args = message.content.slice(prefix.length).split(/ +/);
@@ -28,4 +28,4 @@ client.on('message', msg => {
 	};
 });
 
-client.login('token');
+client.login(token);
