@@ -3,7 +3,6 @@ const client = new Discord.Client();
 const { token } = require("./config.json");
 const prefix = "DJS!";
 const commands = {
-	//This is all the Rich Embed infomation.
 		about: {
 			help: require("./events/about/help"),
 			about: require("./events/about/about"),
