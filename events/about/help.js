@@ -1,3 +1,4 @@
+const Discord = require("discord.js")
 const embed = {
     "title": "Help Menu",
     "color": 15527562,
@@ -16,3 +17,6 @@ const embed = {
       }
     ]
   };
+
+
+module.exports.embed = embed

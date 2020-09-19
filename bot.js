@@ -16,15 +16,29 @@ client.on('ready', () => {
   client.user.setActivity("Currently in Development. || DJS!help");
 });
 
-client.on('message', message => {
-	if (message.author.bot || !message.content.startsWith(prefix)) return;
+client.on("message", message => {
+    if (message.author.bot || !message.content.startsWith(prefix)) return;
 
     const args = message.content.slice(prefix.length).split(/ +/);
-	const command = args.shift().toLowerCase();
-	
-	if(command === "help") {
-		message.channel.send({ embed: commands.about.help });
-	};
+    const command = args.shift().toLowerCase();
+
+    if (command === "help") {
+        return message.channel.send({ embed: commands.about.help.embed }).catch(console.error);
+    }
+
+    let userlink = new Map();
+    if (command === "register") {
+        message.channel.send("> Now Registering...")
+        if (!(message.author.id in userlink)) {
+            userlink.set([
+                [userlink.size + 1, message.author.id]
+            ]);
+        }
+        message.channel.send("> Registered! Welcome to the Club!\n> Remeber to do `DJS!export` once and a while so you don't loose your data in event of a restart.")
+        
+    }else {
+            message.channel.send("You are already Registered, but Make Sure to export your Progress using `DJS!export`.")
+        }
 });
 
 client.login(token);
