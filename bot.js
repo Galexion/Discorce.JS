@@ -30,9 +30,7 @@ client.on("message", message => {
     if (command === "register") { 
         message.channel.send("> Now Registering...")
         if (!userlink.has(message.author.id)) {
-            userlink.set([
-                [message.author.id, 110]
-            ]);
+            userlink.set(message.author.id, 110);
             return message.channel.send("> Registered! Welcome to the Club ${userObject}!\n> Remeber to do `DJS!export` once and a while so you don't loose your data in event of a restart.");
         }
         else {
