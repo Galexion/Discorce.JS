@@ -9,7 +9,7 @@ It's Currently in Development, and Invites are Currently Closed.
 This is My Planned Route.
 ( * is Current Status )
 
-### - ( Stage 1 )
+### ( Stage 1 )
 - beginning Development*
 - Working on lessons
 - Implementing a Progress System
