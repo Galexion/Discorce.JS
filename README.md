@@ -1,11 +1,11 @@
 # Discorce.JS
 Just Misspelled for Fun. A Interactive Discord.JS tutorial.
 
-##What it Does.
+## What it Does.
 It's a Interactive Discord.JS Tutorial.
 It's Currently in Development, and Invites are Currently Closed.
 
-##My Progress
+## My Progress
 This is My Planned Route.
 ( * is Current Status )
 
