@@ -10,9 +10,9 @@ This is My Planned Route.
 ( * is Current Status )
 
 ### ( Stage 1 )
-- beginning Development*
-- Working on lessons
-- Implementing a Progress System
+- beginning Development
+- Working on lessons *
+- Implementing a Progress System *
 ### ( Testing Phase 1 )
 - Bot is Released in Certain Servers.
 - Feedback Gets Gathered
