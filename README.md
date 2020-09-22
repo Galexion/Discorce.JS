@@ -12,6 +12,7 @@ This is My Planned Route.
 ### ( Stage 1 )
 - beginning Development
 - Working on lessons *
+(watch me make the lessons [here](https://docs.google.com/document/d/1l50MJrwPnHfycstLQIsIlDXORScrhLrFEENLXNiG5wk/edit))
 - Implementing a Progress System *
 ### ( Testing Phase 1 )
 - Bot is Released in Certain Servers.
