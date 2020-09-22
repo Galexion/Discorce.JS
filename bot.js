@@ -27,17 +27,18 @@ client.on("message", message => {
         return message.channel.send({ embed: commands.about.help.embed }).catch(console.error);
     }
 
-    if (command === "register") {
+    if (command === "register") { 
         message.channel.send("> Now Registering...")
         if (!userlink.has(message.author.id)) {
             userlink.set([
                 [message.author.id, 110]
             ]);
+            return message.channel.send("> Registered! Welcome to the Club ${userObject}!\n> Remeber to do `DJS!export` once and a while so you don't loose your data in event of a restart.");
         }
-        return message.channel.send("> Registered! Welcome to the Club ${userObject}!\n> Remeber to do `DJS!export` once and a while so you don't loose your data in event of a restart.")
-    }else {
-            message.channel.send("You are already Registered, but Make Sure to export your Progress using `DJS!export`.")
-        }
+        else {
+         return message.channel.send("You are already Registered, but Make Sure to export your Progress using `DJS!export`.")
+    }
+ }
 
     
 });
