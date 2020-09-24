@@ -13,7 +13,7 @@ const commands = {
         },
 	};
 
-
+ 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag} like a simpltion.`);
   client.user.setActivity("Currently in Development. || DJS!help");
@@ -36,8 +36,22 @@ client.on("message", message => {
             return message.channel.send("> Registered! Welcome to the Club ${userObject} !\n> Remeber to do `DJS!export` once and a while so you don't loose your data in event of a restart.");
         }
         else {
-         return message.channel.send("You are already Registered, but Make Sure to export your Progress using `DJS!export`.")
-    }
+         message.channel.send("> You are already Registered, but Make Sure to export your Progress using `DJS!export`.");
+    };
+
+    if (command === "next") {
+        if(!userlink.has(message.author.id)) {
+            message.channel.send("> You Are Not Registered. Register with `DJS!register` Then come Back here.");
+        }else {
+            switch (args[0]) {
+                case "skip":
+                    if (userlink.get(message.author.id === 110)) {
+                        userlink.set(message.author.id, 150)
+                    return message.channel.send({ embed: commands.})
+                    }
+            }
+        }
+    };
  }
 
     
