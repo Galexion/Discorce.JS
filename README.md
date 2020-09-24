@@ -1,9 +1,9 @@
-# Discorce.JS
+# Discorce.JS (Development Builds)
 Just Misspelled for Fun. A Interactive Discord.JS tutorial.
 
-## What it Does.
-It's a Interactive Discord.JS Tutorial.
-It's Currently in Development, and Invites are Currently Closed.
+## Warning
+This Branch is currently not ready for a Launch.
+Do not try Using this build.
 
 ## My Progress
 This is My Planned Route.
