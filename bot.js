@@ -11,6 +11,13 @@ const commands = {
         registering: {
             regText: require("./events/registering/register"),
         },
+        lessons: {
+            110: require("./events/lessons/110"),
+            120: require("./events/lessons/120"),
+            130: require("./events/lessons/130"),
+            140: require("./events/lessons/140"),
+            150: require("./events/lessons/150"),
+        },
 	};
 
  
@@ -33,7 +40,7 @@ client.on("message", message => {
         message.channel.send("> Now Registering...")
         if (!userlink.has(message.author.id)) {
             userlink.set(message.author.id, 110);
-            return message.channel.send("> Registered! Welcome to the Club ${userObject} !\n> Remeber to do `DJS!export` once and a while so you don't loose your data in event of a restart.");
+            return message.channel.send({ embed: commands.registering.regText.embed }).catch(console.error);
         }
         else {
          message.channel.send("> You are already Registered, but Make Sure to export your Progress using `DJS!export`.");
@@ -45,10 +52,10 @@ client.on("message", message => {
         }else {
             switch (args[0]) {
                 case "skip":
-                    if (userlink.get(message.author.id === 110)) {
+                    if (userlink.get(message.author.id) === 110) {
                         userlink.set(message.author.id, 150)
-                    return message.channel.send({ embed: commands.})
-                    }
+                    return message.channel.send({ embed: commands['lessons'][userlink.get(message.author.id)]['embed']});
+                    } 
             }
         }
     };
