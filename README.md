@@ -1,6 +1,9 @@
 # Discorce.JS
 Just Misspelled for Fun. A Interactive Discord.JS tutorial.
 
+This Bot is now being developed under NoMemesInGeneral, a Team I made.
+https://github.com/NoMemesInGeneral/Discorce.JS
+
 ## What it Does.
 It's a Interactive Discord.JS Tutorial.
 It's Currently in Development, and Invites are Currently Closed.
